@@ -2107,6 +2107,7 @@ figcaption {
 }
 
 .hero_background-image {
+  display: none;
   object-fit: cover;
   width: 100%;
   height: 100%;
@@ -2116,7 +2117,10 @@ figcaption {
 
 .hero_background-image-wrapper {
   z-index: 0;
-  background-image: linear-gradient(#00000080, #00000080);
+  background-image: linear-gradient(#00000080, #00000080), url('../images/hero-image.png');
+  background-position: 0 0, 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
   position: absolute;
   inset: 0%;
 }
